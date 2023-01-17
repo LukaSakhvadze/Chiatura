@@ -1,21 +1,444 @@
-
-#first{
-    text-align:center
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
-#second{
-    text-align:center
-}
-#third{
-    text-align:center
-}
+/*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*/
 body{
-    margin-left:20px;
+    width:100%;
+    height:100%;
+    background-color: rgb(199, 224, 235) 
+    /* background-image: linear-gradient(135deg, rgb(185, 215, 228) 0%, #d4f7e1 100%); */
+}    
+html{
+    scroll-behavior:smooth;
 }
-img {
-display:block;
-margin:0 auto;
+h1{
+    text-align: center;
+}
+h1 span{
+    color:rgb(59, 59, 168)
+}
+.heading__div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;    
 }
 
+header h2{
+    display:inline-block;
+    font-size: 180%;
+    margin: 1% 0;
+    cursor: pointer;
+}
+
+header nav{
+    display:none;
+    
+}
+.book{
+    font-size:340%;
+    cursor:pointer;
+    margin-bottom:1%;
+    
+}
+
+.opened{
+    transform:rotate(360deg);
+    transition-property: all transform;
+    transition-duration: 1s;
+
+}
+.closed2x{
+    transform:rotate(-360deg);
+    transition-property: all transform;
+    transition-duration: 1s;
+}
+.book__closed{
+    display:none;
+    
+}
+.book__opened{
+    display:block;
+    transform-origin: top center;
+    animation:showmenu 1s ease-in-out forwards;
+    padding:1%;
+    border:5px ridge rgb(41, 10, 114);
+    box-shadow:5px 5px 10px 3px;
+    background-color: rgb(72, 62, 168);
+    
+}
+
+@keyframes showmenu {
+    0%{
+        transform:scale(0)
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes showlist{
+    0%{
+        
+        transform:scale(0)
+    }
+    80%{
+        transform-origin: top left;
+        transform: scale(1.2);
+        
+    }
+    100%{
+        transform: scale(1);       
+    }
+}
+header ul{
+    list-style-type: none;
+    
+}
+nav li{
+    font-size: 160%;
+    padding:1%;
+    animation: showlist 1s ease-in-out  backwards;
+    
+}
+
+
+nav li:hover{
+    transform-origin: center left;
+    transform:scale(1.3);
+    
+    
+}
+
+header li a{
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+header li a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(48, 148, 106);
+}
+
+
+a:visited, a:active{
+    color:rgb(189, 184, 184);
+    
+}
+/*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*/
+/*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*/
+main h2,main p{
+    text-indent: 1%;
+    
+}
+
+hr{
+    height:5px;
+    margin-top:1%;
+    background-image:linear-gradient(to right, green, blue  )
+}
+main h2{
+    padding:1% 0% 0.6% 1%;
+    position: relative;
+    display:inline-block;
+    white-space: nowrap;
+    
+}
+main h2::before{
+    content:"";
+    height:3px; 
+    width:0%;
+    background-color: rgb(179, 72, 104);
+    position: absolute;
+    bottom:0;
+    left:7%;
+    transition:width 0.25s ease-out;
+   
+}
+
+main h2:hover::before{
+    width:100%;
+}
+
+main p{
+    margin:1%;
+}
+.picture{
+    width:70%;
+    
+
+}
+
+.picture img{
+    width:70%;
+    height:50vh;
+    object-fit: cover;
+}
+
+img{
+    margin:0 auto;
+    display:block;
+    
+}
+figcaption{
+    text-align: center;
+}
+.maindiv1{
+    display:flex;
+    justify-content: center;
+
+}
+main button{
+    font-size: 700%;
+    border:0;
+    background-color: transparent;
+    cursor:pointer;
+    z-index: 1;
+    color:rgb(232, 233, 236);
+    height:50vh;
+    
+}
+main button:hover{
+    color:blue;
+    transform:scaleX(1.2);
+    backdrop-filter: blur(2px);
+}
+.right{
+    margin-left:-22%;
+}
+.left{
+    margin-right:-22%;
+}
+.Ch{
+    font-size: 150%;
+    text-indent: 1%;
+}
+
+.On{
+    display:block;
+}
+.Off{
+    display:none;
+}
+/*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*/
+/*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*/
+.maindiv2{
+    margin-top:1%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.mainP2{
+    width:40%;
+    
+}
+.pictures img{
+    width:40rem;
+    height:50vh;
+    margin-left:1%;
+}
+.visible{
+    display:block;
+}
+.hidden{
+    display:none;
+}
+/*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*//*section2*/
+/*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*/
+.pictures2 img{
+    width:40rem;
+    height:50vh;
+}
+
+.pictures2{
+    display:flex;
+    flex-flow:wrap column;
+    align-items: center;
+    justify-content: center;
+}
+.fadeDiv{
+    position: relative;
+    width:40rem;
+    height:50vh;
+    
+}
+
+.picture8{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.picture9{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.fadeOff{
+    animation:fadeOff 2s forwards;
+   
+}
+
+.fadeOn{
+    animation:fadeOn 2s forwards;
+   
+}
+@keyframes fadeOff {
+    0%{
+        opacity: 1;
+        display:block;
+    }
+
+    100%{
+        opacity: 0;
+        display:none;
+    }
+}
+@keyframes fadeOn {
+    0%{
+        opacity:0;
+        display:none;
+    }
+    100%{
+        opacity: 1;
+        display:block;
+    }
+}
+/*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*//*section3*/
+/*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*/
+.manganum{
+    float:left;
+    padding:1% 2% 0 1%;
+    margin-bottom: 3%;
+    margin-top:2%;
+}
+.manganum:hover{
+    transition:transform 1s ease-in-out;
+    transform: scale(1.2);
+}
+/*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*/
+/*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*/
+main h3{
+    display:inline-block;
+    margin-left:1%;
+    position: relative;
+    padding-bottom:0.5%;
+}
+main h3::before{
+    content:"";
+    width:0%;
+    height:10%;
+    background-color: rgb(28, 196, 50);
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition: width 0.3s ease-in-out
+}
+
+main h3:hover::before{
+    width:100%;
+
+}
+/*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*/
+/*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*/
+main li{
+    text-indent: 1%;
+    list-style-type: none;
+
+}
+main ul li{
+    padding-left:1%;
+    font-size:120%;
+    padding-bottom:2%;
+}
+.human{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.human1,.human2{
+    width:40%;
+    font-size:110%;
+    border-style: groove;
+    border:5px groove rgb(136, 52, 125);
+    margin-top:1%;
+    padding:1%;
+    
+}
+main ol li img{
+    padding-top:5%;
+    width:12rem;
+    height:30vh;
+    object-fit: cover;
+}
+/*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*//*section6*/
+/*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*/
+h4{
+    text-indent: 1%;
+    margin:1%;  
+    padding:0.5%;
+    padding-bottom:0.5%;
+    display:inline-block;
+    white-space: nowrap;
+    font-size: 150%;
+    border:2px solid rgb(133, 54, 97);
+    background-color: rgb(48, 34, 170);
+    box-shadow: 5px 5px 7px;
+    
+}
+h4:hover{
+    transform: scale(1.2);
+    transform-origin: center left;
+}
+.lasta{
+    text-decoration: none;
+}
+.lasta:visited, .lasta:active{
+    color:rgb(228, 228, 228);
+}
+/*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*/
+/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
+footer{
+    padding-top:1%;
+}
+
+.footerDiv{
+    padding: 1% 0 1% 1%;
+}
+
+footer h2{
+    text-indent: 1%;
+
+}
+footer h2{
+    padding:1% 0% 0.6% 1%;
+    position: relative;
+    display:inline-block;
+    white-space: nowrap;
+    
+}
+footer h2::before{
+    content:"";
+    height:3px; 
+    width:0%;
+    background-color: rgb(179, 72, 104);
+    position: absolute;
+    bottom:0;
+    left:7%;
+    transition:width 0.25s ease-out;
+   
+}
+footer h2:hover::before{
+    width:100%;
+}
+/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
 table,tr,th,td,caption{
     border: 1px solid #eee;
     font-family: 'Courier New', Courier, monospace;
