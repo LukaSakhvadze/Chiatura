@@ -126,4 +126,42 @@ fadeDiv.addEventListener("mouseout",(event)=>{
    
 })
 
+let Box1=document.querySelector(".Box1")
+let Box2=document.querySelector(".Box2")
+let Box3=document.querySelector(".Box3")
+let Box4=document.querySelector(".Box4")
+let Box5=document.querySelector(".Box5")
+let Box6=document.querySelector(".Box6")
 
+let img1=document.querySelector(".img1")
+let img2=document.querySelector(".img2")
+let img3=document.querySelector(".img3")
+let img4=document.querySelector(".img4")
+let img5=document.querySelector(".img5")
+let img6=document.querySelector(".img6")
+
+Box1.addEventListener("click",(event)=>{
+    img1.classList.toggle("On1")
+    img1.classList.toggle("Off1")
+})
+Box2.addEventListener("click",(event)=>{
+    img2.classList.toggle("On1")
+    img2.classList.toggle("Off1")
+})
+Box3.addEventListener("click",(event)=>{
+    img3.classList.toggle("On1")
+    img3.classList.toggle("Off1")
+})
+Box4.addEventListener("click",(event)=>{
+    img4.classList.toggle("On1")
+    img4.classList.toggle("Off1")
+})
+Box5.addEventListener("click",(event)=>{
+    
+    img5.classList.toggle("On1")
+    img5.classList.toggle("Off1")
+})
+Box6.addEventListener("click",(event)=>{
+    img6.classList.toggle("On1")
+    img6.classList.toggle("Off1")
+})

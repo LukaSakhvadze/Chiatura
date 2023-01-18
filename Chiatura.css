@@ -130,6 +130,9 @@ a:visited, a:active{
     color:rgb(189, 184, 184);
     
 }
+a{
+    color:rgb(189, 184, 184);
+}
 /*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*/
 /*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*//*section1*/
 main h2,main p{
@@ -318,10 +321,16 @@ main button:hover{
     padding:1% 2% 0 1%;
     margin-bottom: 3%;
     margin-top:2%;
+    margin-right:3%;
+    
 }
 .manganum:hover{
     transition:transform 1s ease-in-out;
     transform: scale(1.2);
+}
+.manganum1{
+    filter:drop-shadow(10px 10px 5px);
+    
 }
 /*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*//*section4*/
 /*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*//*section5*/
@@ -404,6 +413,121 @@ h4:hover{
     color:rgb(228, 228, 228);
 }
 /*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*//*section7*/
+/*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*/
+.sights figure{
+    width:30rem;
+    height:41vh;
+    
+}
+
+.mainSights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem 5rem;
+    justify-content: space-evenly;
+    width:95%;
+    margin:2% auto;
+}
+.mainSights img{
+    position: absolute;
+    width:30rem;
+    height:41vh;
+    object-fit: cover;
+    
+}
+
+.sights{
+    position: relative;
+    width:30rem;
+    height:41vh;
+    margin:2% 0;
+    border:10px ridge rgb(122, 82, 185);
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow:10px 10px 30px;
+    cursor:pointer;
+    background-image: radial-gradient(rgb(88, 26, 158), rgb(28, 6, 158)  );
+}
+
+.sights:hover{
+    transition:transform 0.3s ease-in-out;
+    transform:scale(1.1);
+    transition:border-color 0.3s ease-in-out;
+    border-color:red;
+}
+
+.sights P{
+    top:13%;
+    position: absolute;
+    text-indent: 5%;
+    color:white;
+}
+.Box1 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:35%;
+}
+.Box2 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:30%;
+}
+.Box3 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:29%;
+}
+.Box4 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:29%;
+}
+.Box5 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:25%;
+}
+.Box6 h5{
+    position: absolute;
+    top: 2%;
+    font-size:150%;
+    color:white;
+    left:29%;
+}
+.On1{
+    animation: sightseeing 1s forwards;
+    
+}
+.Off1{
+    animation: sightseeingBack 1s forwards;
+}
+@keyframes sightseeing {
+    0%{
+        opacity:1
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes sightseeingBack {
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*//*section8*/
 /*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
 footer{
     padding-top:1%;
