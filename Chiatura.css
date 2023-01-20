@@ -676,6 +676,10 @@ legend h4{
     padding:2%;
     box-shadow:1px 1px 50px white;
 }
+legend h4:hover{
+    transform:none;
+    
+}
 legend{
     margin-left:2%;
 }
