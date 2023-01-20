@@ -165,3 +165,4 @@ Box6.addEventListener("click",(event)=>{
     img6.classList.toggle("On1")
     img6.classList.toggle("Off1")
 })
+

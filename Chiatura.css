@@ -196,7 +196,7 @@ figcaption{
     justify-content: center;
 
 }
-main button{
+.left,.right{
     font-size: 700%;
     border:0;
     background-color: transparent;
@@ -206,7 +206,7 @@ main button{
     height:50vh;
     
 }
-main button:hover{
+.left:hover,.right:hover{
     color:blue;
     transform:scaleX(1.2);
     backdrop-filter: blur(2px);
@@ -548,6 +548,9 @@ footer h2{
     white-space: nowrap;
     
 }
+#lastP{
+    padding:0 0 1% 1%;
+}
 footer h2::before{
     content:"";
     height:3px; 
@@ -563,11 +566,207 @@ footer h2:hover::before{
     width:100%;
 }
 /*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
-table,tr,th,td,caption{
-    border: 1px solid #eee;
+
+tr,th,td,caption{
+    border: 2px solid rgb(247, 43, 7);
     font-family: 'Courier New', Courier, monospace;
-    border-collapse:collapse;
+    font-weight: 700;
     padding: 0.5rem;
 }
 
+table{
+    margin-top:1.5%;
+    margin-left:5%;
+    text-align: center;
+}
+table:hover{
+    box-shadow: 0px 0px 30px red;
+}
+th{
+    font-size:150%;
+}
+dt{
+    font-weight: 500;
+}
+dd{
+    margin-left:3%;
+    font-size:120%;
+    display:inline-block;
+    white-space: nowrap;
+}
+dl dd, dl a{
+    color:rgb(167, 32, 230)
+}
+dl a:visited {
+    color:rgb(167, 32, 230)
+}
+dl a:active{
+    color:rgb(115, 28, 155)
+}
+dl a:hover{
+    color:rgb(83, 12, 216);
+}
+.Pa:hover{
+    color:rgb(83, 12, 216);
+}
+dl dd:hover{
+    transform:scale(1.2);
+    transform-origin:center left
+}
 
+label,input{
+    font-size: 120%;
+    font-weight: 600;
+    
+}
+.MailInfos{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height:40vh;
+    column-gap: 4%;
+    row-gap:8%;
+    margin-top: 4%;
+   
+}
+
+
+.namesbox:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.namesbox:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.namesbox:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.namesbox:nth-child(1){
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+
+
+input{
+    margin-top:3%;
+    padding:0.5rem;
+    border-radius: 10px;
+    border-width:3px;
+    border-color:blueviolet;
+}
+.Longbar{
+    width:100%;
+    
+}
+input:hover{
+    border-color:red;
+    transform:scale(1.1);
+    transform-origin:bottom left;
+}
+
+fieldset{
+    margin-left:0.5%;   
+    background-image: linear-gradient(135deg, purple, blue);
+    border:5px solid rgb(142, 8, 252);
+}
+legend h4{
+    color:white;
+    padding:2%;
+    box-shadow:1px 1px 50px white;
+}
+legend{
+    margin-left:2%;
+}
+
+fieldset label{
+    margin-left:1%;
+}
+fieldset textarea{
+    background-image:radial-gradient(yellow 50%, orange   100%);
+    margin-left:1%;
+    margin:1% 0 1% 1%; 
+    border-radius: 10px;
+    box-shadow:5px 5px 5px black;
+}
+
+#additionalInfo{
+    color:white;
+    margin-top:50%;
+}
+textarea::placeholder{
+    font-size: large;
+    color:grey;
+    text-indent: 5%;
+}
+textarea{
+    text-indent: 5%;
+    padding-top:0.5%;
+    padding-left:1%;
+    font-size: 150%;
+}
+
+.btnPage2{
+    padding:0.5%;
+    margin-left:0.5%;
+    margin-bottom:1%;
+    margin-top:1%;
+    color:rgb(255, 255, 255);
+    background-color: red;
+    cursor:pointer;
+    font-size:150%;
+    background-image: linear-gradient(135deg, purple, blue);
+}
+.btnPage2:hover{
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    
+}
+#BackTofirst{
+    text-decoration: none;
+}
+
+/*hide*//*hide*//*hide*//*hide*//*hide*//*hide*//*hide*//*hide*//*hide*/
+.SecondBody{
+    display:flex;
+    height:100vh;   
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size:150%;
+    
+}
+.SecondClass{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height:40vh;
+    width:100%;
+    
+}
+.Page2H2{
+    margin:0 auto;
+    text-align: center;
+    margin-bottom:15%;
+    display:block;
+    cursor:text
+}
+.Page2a1{
+    text-decoration: none;
+    cursor:pointer
+}
+
+.Page2a2{
+    text-decoration: none;
+    cursor:pointer
+
+}
+.page2h4{
+    padding:1%;
+    
+}
+.page2h4:hover{
+    transform: scale(1.2);
+    transform-origin: center;
+    
+}

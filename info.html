@@ -7,12 +7,16 @@
         <title>ჭიათურა</title>
         <link rel="icon" href="Chiatura_COA.gif" type="image/x-icon">
         <link rel="stylesheet" href="Chiatura.css">
+        <script defer src="index2.js"></script>
     </head>    
-    <body>
+    <body >
+        <header>
         <h1 id="third">ზოგადი და საკომუნიკაციო ინფორმაცია</h1>
-        <hr>
-        <fieldset>
-            <legend id="legend2"><h2>ზოგადი ინფორმაცია</h2></legend>
+        </header>
+        
+        <main>
+            <h2 >ზოგადი ინფორმაცია</h2>
+            <hr>
             <table>
                 <th colspan="2">ჭიათურა</th>
                 <tr>
@@ -75,59 +79,70 @@
                     <td>+995 479</td>
                 </tr>
                 <tr>
-                    <td>საფოსტო ინდექსი</td>
-                    <td>5500</td>
+                    <td id="LastOfTable">საფოსტო ინდექსი</td>
+                    <td id="LastOfTable2">5500</td>
                 </tr>
                 
             </table>
-        </fieldset>
+        
         <br>
         <br>
-        <form action="https:httpbin.org/get" method="get">
-            <fieldset>
-                <legend><h2>საკომუნიკაციო ინფორმაცია</h2></legend>
+        <form id="Form"action="https:httpbin.org/get" method="get">
+                <h2>საკომუნიკაციო ინფორმაცია</h2>
+                <hr>
                 <dl>
-                    <dt><p>დამატებითი ინფორმაციის მისაღებად გთხოვთ, ეწვიოთ ჩვენს გვერდს შემდეგ მისამართზე: </p></dt>
-                    <dd><p><a href="https://ka.wikipedia.org/wiki/%E1%83%AD%E1%83%98%E1%83%90%E1%83%97%E1%83%A3%E1%83%A0%E1%83%90" target="_blank">ჭიათურა-შავი ოქროს ქალაქი</a></p></dd>
-                    <dt><p>ხოლო, თუ გსურთ იხილოთ ჭიათურის ღირსშესანიშნაობების შესახებ მოკლე ვიდეო, გადადით ლინკზე:</p></dt>
-                    <dd><p><a href="https://www.youtube.com/watch?v=ve2C4AbYTWs&ab_channel=GeorGAbZo" target="_blank">ჭიათურა-ერთადერთო</a></p></dd>
+                    <dt><p>დამატებითი ინფორმაციის მისაღებად გთხოვთ, ეწვიოთ საინფორმაციო გვერდს შემდეგ მისამართზე: </p></dt>
+                    <dd><p><a href="https://ka.wikipedia.org/wiki/%E1%83%AD%E1%83%98%E1%83%90%E1%83%97%E1%83%A3%E1%83%A0%E1%83%90" target="_blank">ჭიათურა-ვიკიპედია</a></p></dd>
+                    <dt><p>ხოლო, თუ გსურთ გაეცნოთ ქალაქის იერსახეს, იხილეთ მოკლე ვიდეო ლინკზე:</p></dt>
+                    <dd><p><a href="https://www.youtube.com/watch?v=uTGvHwPbnWY&t=2s&ab_channel=tamardogadze" target="_blank">ჭიათურა-შავი ოქროს ქალაქი</a></p></dd>
                     <dt><p>გთხოვთ,გამოგვიგზავნეთ შეტყობინება მეილზე:</p></dt>
-                    <dd><p><mark>@gmail.com</mark></p></dd>
+                    <dd><p class="Pa">Chiatura@gmail.com</p></dd>
                     <dt><p>ან დაგვირეკეთ ნომერზე:</p></dt>
-                    <dd><p><a href="tel:+555555555"><mark>555 55 55 55</mark> </a></p></dd>
+                    <dd><p><a href="tel:+555555555">555 55 55 55</a></p></dd>
                 </dl>
                 <p>ან შეავსეთ ქვემოთ მოცემული ველები და ჩვენ დაგიკავშირდებით:</p>
-
-                <label for="სახელი">სახელი</label>
-                <input type="text" id="სახელი" name="სახელი" placeholder="თქვენი სახელი" autocomplete="on" required >
-                <br>
-                <br>
-                <label for="გვარი">გვარი</label>
-                <input type="text" id="გვარი" name="გვარი" placeholder="თქვენი გვარი" autocomplete="on" required >
-                <br>
-                <br>
-                <label for="ტელეფონის ნომერი">ტელეფონის ნომერი</label>
-                <input type="tel" id="ტელეფონის ნომერი" name="ტელეფონის ნომერი" placeholder="555 55 55 55" autocomplete="on"  >
-                <br>
-                <br>
-                <label for="ელექტრონული ფოსტა">ელექტრონული ფოსტა</label>
-                <input type="email" id="ელექტრონული ფოსტა" name="ელექტრონული ფოსტა" placeholder="@" autocomplete="on"  >
+                <div class="MailInfos">
+                    
+                        <div class="namesbox">
+                            <label for="სახელი">სახელი</label>
+                            <input type="text" id="სახელი" name="სახელი" placeholder="თქვენი სახელი" autocomplete="on" required >
+                        </div>
+                        <div class="namesbox">
+                            <label for="გვარი">გვარი</label>
+                            <input type="text" id="გვარი" name="გვარი" placeholder="თქვენი გვარი" autocomplete="on" required >
+                        </div>
+        
+                    
+                        <div class="namesbox">
+                            <label for="ტელეფონის ნომერი">ტელეფონის ნომერი</label>
+                            <input type="tel" id="ტელეფონის ნომერი" name="ტელეფონის ნომერი" placeholder="000-000-000" autocomplete="on"  >
+                        </div>
+                        <div class="namesbox">
+                            <label clas="LongbarLabel" for="ელექტრონული ფოსტა">ელექტრონული ფოსტა</label>
+                            <input class="Longbar"type="email" id="ელექტრონული ფოსტა" name="ელექტრონული ფოსტა" placeholder="თქვენი ელ-ფოსტა @" autocomplete="on"  >
+                        </div>
+                    
+                </div>
                 <br>
                 <br>
                 <br>
                 <fieldset>
-                    <legend><h4>დამატებითი შეტყობინების ველი:</h4></legend>
-                    <label for="message"><strong>შეტყობინება:</strong></label>
+                    <legend><h4>დამატებითი შეტყობინების ველი:</h4></legend>   
                     <br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="დაგვიტოვეთ შეტყობინება"></textarea>
+                    <br> 
+                    <label id="additionalInfo"for="message" ><strong>შეტყობინება:</strong></label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="20" placeholder="შეტყობინების ველი"></textarea>
                 </fieldset>    
-            <button type="submit">გადაგზავნა</button>    
-            <button type="reset">განახლება</button>
-            </fieldset>
+            <button class="btnPage2"type="submit">გადაგზავნა</button>    
+            <button class="btnPage2" id="SubmitButton"type="reset">განახლება</button>
         </form> 
-        <h4><a href="index.html">&gt;მთავარ გვერდზე დაბრუნება&lt;</a></h4>
+        <h4><a id="BackTofirst"href="index.html">მთავარ გვერდზე დაბრუნება</a></h4>
         <hr>
-        <p>&lt;&lt;&lt; &copy; ლუკა სახვაძე &gt;&gt;&gt; 2022წელი</p>
+        </main>
+        <footer>
+            <p id="lastP"><strong>&lt;&lt;&lt; &copy; ლუკა სახვაძე &gt;&gt;&gt; 2023წელი</strong></p>
+        </footer>
     </body>  
 
     
